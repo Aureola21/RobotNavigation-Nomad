@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomad Trail - Visual Navigation with Diffusion Policies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #004466;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background: white;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      color: #004466;
+    }
+
+    img, video {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nomad Trail</h1>
+    <p>Visual Navigation using Diffusion Policies and Attention U-Net</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>🔍 Overview</h2>
+      <p>
+        Nomad Trail is a navigation policy that uses <strong>diffusion-based trajectory prediction</strong> 
+        guided by visual and goal inputs. It leverages <strong>Attention U-Net</strong> as the denoising network
+        within the diffusion pipeline. The model was trained using expert demonstrations in Habitat.
+      </p>
+    </section>
+
+    <section>
+      <h2>🧠 Architecture</h2>
+      <img src="assets/architecture.png" alt="Model Architecture">
+      <p>Core architecture of the model including visual encoder, goal input fusion, and attention-based decoder.</p>
+    </section>
+
+    <section>
+      <h2>🎬 Rollout Demo</h2>
+      <video controls>
+        <source src="assets/rollout.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Example of successful goal-reaching using the diffusion policy.</p>
+    </section>
+
+    <section>
+      <h2>📈 Results</h2>
+      <img src="assets/results_plot.png" alt="Results Plot">
+      <ul>
+        <li><strong>Success Rate:</strong> 81.3%</li>
+        <li><strong>Min Collision Distance:</strong> 0.3m</li>
+        <li><strong>Mask Probability:</strong> 0.5</li>
+        <li><strong>Training Epochs:</strong> 5</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📦 Code</h2>
+      <p>Check out the source code and training scripts on <a href="https://github.com/yourusername/nomad-trail" target="_blank">GitHub</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Sehaj Ganjoo | 2025</p>
+  </footer>
+
+</body>
+</html>
